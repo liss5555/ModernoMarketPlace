@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@rateyo/jquery": "^3.0.0-alpha.2",
     "browser-sync": "^2.26.13",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
@@ -20,6 +21,7 @@
     "magnific-popup": "^1.1.0",
     "mixitup": "^3.3.1",
     "normalize.css": "^8.0.1",
+    "rateyo": "^2.3.5",
     "slick-carousel": "^1.8.1"
   }
 }
