@@ -63,7 +63,7 @@
 
 	a {
 		color: #ffffff;
-		font-weight: 500;
+		@include f500;
 		font-size: 14px;
 		line-height: 30px;
 	}
@@ -86,7 +86,7 @@
 
 	&-title {
 		font-size: 48px;
-		font-weight: 700;
+		@include f700;
 		line-height: 72px;
 		margin-bottom: 9px;
 		letter-spacing: -1px;
@@ -95,7 +95,7 @@
 	&-text {
 		font-size: 20px;
 		line-height: 30px;
-		font-weight: 500;
+		@include f500;
 		margin-bottom: 48px;
 	}
 
@@ -117,7 +117,7 @@
 			font-size: 14px;
 			line-height: 30px;
 			outline: none;
-			font-weight: 500;
+			@include f500;
 
 			&:focus {
 				border: 1px solid #ccc;
@@ -125,7 +125,7 @@
 
 			&::placeholder {
 				color: #90a4ae;
-				font-weight: 500;
+				@include f500;
 			}
 		}
 
@@ -162,7 +162,7 @@
 
 	button {
 		font-size: 14px;
-		font-weight: 500;
+		@include f500;
 		background-color: #fff;
 		border: none;
 		padding: 10px 23px;
@@ -214,13 +214,13 @@
 
 	&-title {
 		font-size: 18px;
-		font-weight: 500;
+		@include f500;
 		margin-bottom: 10px;
 
 	}
 
 	&-category {
-		font-weight: 500;
+		@include f500;
 		color: $green;
 		display: block;
 
@@ -228,7 +228,7 @@
 
 	&-price {
 		font-size: 20px;
-		font-weight: 700;
+		@include f700;
 		line-height: 34px;
 	}
 
@@ -264,7 +264,7 @@
 	}
 
 	span {
-		font-weight: 500;
+		@include f500;
 	}
 
 	&-star {
@@ -339,6 +339,82 @@
 	
 }
 
+// advantages
 
+.advantages{
+	background-color: $bg;
+	padding: 115px 0;
+}
+.advantages__title{
+	color: #fff;
+	margin-bottom: 70px;
+}
+.advantages__inner{
+	display: flex;
+	justify-content: space-between;
+}
+.advantages__item{
+	max-width: 330px;
+	text-align: center;
+	padding: 0 8px;
+	transition: all 2s;
+	cursor: pointer;
+	&-title{
+		color: #fff;
+		font-size: 24px;
+		@include f500;
+		margin-bottom: 20px;
+	}
+	&-text{
+		color: #b0bec5;
+		line-height: 24px;
+	}
+	&:hover{
+		.advantages__item-image {
+			background-color: $green;
+			transition: all .5s;
+			svg g{
+				fill:#fff;
+				transition: all .5s;
+			}
+		}
+		.advantages__item-title{
+			color: $green;
+			transition: all .5s;
+		}
+		
+	}
 
-
+}
+.advantages__item-image{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto 30px;
+	width: 115px;
+	height: 115px;
+	border-radius: 50%;
+	background: #fff;
+	display: inline-block;
+	transition: all .5s;
+	&.iconsvg-1{
+		align-items: center;
+		svg{
+			width: 50px;
+			height: 115px;
+			
+		}
+	}
+	&.iconsvg-2{
+		svg{
+			width: 72px;
+			height: 115px;
+		}
+	}
+	&.iconsvg-3{
+		svg{
+			width: 87px;
+			height: 122px;
+		}
+	}
+}
