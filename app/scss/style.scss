@@ -398,11 +398,9 @@
 	display: inline-block;
 	transition: all .5s;
 	&.iconsvg-1{
-		align-items: center;
 		svg{
 			width: 50px;
 			height: 115px;
-			
 		}
 	}
 	&.iconsvg-2{
@@ -416,5 +414,77 @@
 			width: 87px;
 			height: 122px;
 		}
+	}
+}
+
+// author
+.author{
+	
+	min-height: 749px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&__box{
+		width: 100%;
+		max-width: 650px;
+		min-height: 215px;
+		background-color: $green;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__title{
+		width: 270px;
+		font-size: 30px;
+		line-height: 36px;
+		color: #fff;
+		margin-right: 45px;
+		@include f500;
+		span{
+			@include f700;
+		}
+	}
+	&__link{
+		padding: 14px 40px;
+		background-color: #fff;
+		font-size: 18px;
+		line-height: 36px;
+		color: $bg;
+	}
+}
+
+// tutorial
+
+.tutorial{
+	background-color: #fff;
+	padding: 65px 0 150px;
+	&__title{
+		margin-bottom: 45px;
+	}
+}
+.tutorial__inner{
+	display: flex;
+	justify-content: space-between;
+}
+.tutorial__item{
+	max-width: 370px;
+	width: 100%;
+	text-align: center;
+	&-image{
+		background-image: url('../images/content/tutorial.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		min-height: 273px;
+		margin-bottom: 30px;
+	}
+	&-title{
+		font-size: 24px;
+		line-height: 60px;
+		@include f700;
+		color: $bg;
 	}
 }
