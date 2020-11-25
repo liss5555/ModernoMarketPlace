@@ -6,7 +6,10 @@ html{
 *::after{
 	box-sizing: inherit;
 }
-
+html,
+body {
+	height: 100%;
+}
 a{
 	display: inline-block;
 	text-decoration: none;
@@ -18,13 +21,27 @@ li{
 	padding: 0;
 	list-style: none;
 }
-body{
+
+body {
 	font-family: "Roboto-Regular", sans-serif;
 	font-size: 15px;
 	font-weight: 400;
 	color: $text;
 	
 }
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.content {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+
 .container{
 	max-width: 1200px;
 	margin: 0 auto;
@@ -52,4 +69,36 @@ body{
   display: inline-block;
 	margin-right: 13px;
 	
+}
+.breadcrumbs{
+	background-color: $grey;
+	&__inner{
+	padding: 45px 0 40px;
+	}
+	&__list li{
+		display: inline-block;
+		& + li{
+			padding-left: 20px;
+			position: relative;
+			&::before{
+				content: '-';
+				position: absolute;
+				color: $green;
+				left: 5px;
+			}
+		}
+		&:last-child{
+			a,
+			span{
+				color: $bg;
+			}
+			a{
+				color: #b0bec5;
+			}
+		}
+	}
+}
+
+.page-content{
+	background-color: $grey;
 }
