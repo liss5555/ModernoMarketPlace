@@ -28,17 +28,18 @@
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?nktlst');
-  src:  url('../fonts/icomoon.eot?nktlst#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?nktlst') format('truetype'),
-    url('../fonts/icomoon.woff?nktlst') format('woff'),
-    url('../fonts/icomoon.svg?nktlst#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?euiizh');
+  src:  url('../fonts/icomoon.eot?euiizh#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?euiizh') format('truetype'),
+    url('../fonts/icomoon.woff?euiizh') format('woff'),
+    url('../fonts/icomoon.svg?euiizh#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
 [class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: never;
   font-style: normal;
@@ -67,6 +68,9 @@
 .icon-shopping-cart:before {
   content: "\f07a";
 }
+.icon-heart-o:before {
+  content: "\f08a";
+}
 .icon-phone:before {
   content: "\f095";
 }
@@ -75,6 +79,9 @@
 }
 .icon-unsorted:before {
   content: "\f0dc";
+}
+.icon-comment-o:before {
+  content: "\f0e5";
 }
 .icon-bolt:before {
   content: "\f0e7";

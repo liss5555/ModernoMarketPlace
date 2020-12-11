@@ -1,6 +1,6 @@
 $(function(){
 
-	var mixer = mixitup('.products__inner-box');
+	
 
 	$(".rate-star").rateYo({    
     rating: 5,
@@ -25,5 +25,19 @@ $(function(){
 		prefix: "$"
 	
 	});
+
+	$('.icon-th-list').on('click', function(){
+		$('.product__item.center').addClass('list');
+		$('.icon-th-list').addClass('active');
+		$('.icon-th-large').removeClass('active')
+	});
+	
+	$('.icon-th-large').on('click', function(){
+		$('.product__item.center').removeClass('list');
+		$('.icon-th-large').addClass('active');
+		$('.icon-th-list').removeClass('active')
+	});
+
+	var mixer = mixitup('.products__inner-box');
 
 });
