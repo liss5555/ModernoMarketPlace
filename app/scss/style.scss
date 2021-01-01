@@ -27,7 +27,7 @@
 
 .header__btn {
 	padding: 4px;
-	width: 71px;
+	min-width: 71px;
 	border-radius: 4px;
 	font-size: 12px;
 	line-height: 24px;
@@ -132,12 +132,12 @@
 	}
 }
 .basket{
+	margin-right: 20px;
 	span{
 		background-color: $green;
 	}
 }
 .user{
-	margin-left: 20px;
 	margin-right: 25px;
 	padding-right: 20px;
 	position: relative;
@@ -327,6 +327,10 @@
 	width: 120px;
 	margin-left: 6px;
 	background-color: $red;
+}
+.header__btn-menu,
+.menu__btn{
+	display: none;
 }
 // section search
 
@@ -1384,3 +1388,7 @@
 		padding-right: 30px;
 	}
 }
+
+
+
+@import 'media';

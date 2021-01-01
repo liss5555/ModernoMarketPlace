@@ -38,6 +38,21 @@ $(function(){
 		$('.icon-th-list').removeClass('active')
 	});
 
-	var mixer = mixitup('.products__inner-box');
+
+	$('.menu__btn').on('click', function(){
+		$('.menu__list').slideToggle();
+	});
+	
+	$('.header__btn-menu').on('click', function(){
+		$('.header__box').toggleClass('active');
+	});
+	
+				
+						
+
+	var mixer = mixitup('.products__inner-box'); //плагин написан на чистом js должен 
+	// видеть себя в дереве на странице, еси класса нет, то все не будет работать
+	//нужно вставить єтот класс на страницу
+	//а в js дб внизу
 
 });
